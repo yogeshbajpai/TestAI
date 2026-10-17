@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Saltmarsh Bakehouse</title>
+<style>
+:root{
+  box-sizing:border-box;
+  --bg:#f2efe6; --ink:#1f2a2e; --muted:#566468; --accent:#2f6f73; --panel:#e4e8e2; --line:#c9d0c8;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#141b1d;--ink:#e8ece6;--muted:#9aa8a8;--accent:#6fc1c4;--panel:#1d282a;--line:#2f3d40}
+}
+:root[data-theme="dark"]{--bg:#141b1d;--ink:#e8ece6;--muted:#9aa8a8;--accent:#6fc1c4;--panel:#1d282a;--line:#2f3d40}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 Georgia,"Times New Roman",serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+header{padding:72px 0 56px}
+h1{font-size:clamp(2.6rem,9vw,4.6rem);line-height:1.02;margin:0 0 20px;letter-spacing:-.02em;font-weight:700}
+.lead{font-size:1.2rem;color:var(--muted);max-width:34em;margin:0 0 28px}
+.btn{display:inline-block;background:var(--accent);color:var(--bg);padding:12px 22px;border-radius:6px;text-decoration:none;font:600 1rem system-ui,sans-serif}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:1.5rem;margin:0 0 16px}
+.menu{list-style:none;margin:0;padding:0}
+.menu li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px dotted var(--line)}
+.menu span:last-child{font-family:system-ui,sans-serif;white-space:nowrap}
+.menu small{display:block;color:var(--muted);font-size:.9rem}
+.hours{background:var(--panel);padding:24px;border-radius:8px}
+.hours p{margin:4px 0}
+footer{padding:40px 0 56px;color:var(--muted);font-size:.95rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Bread, baked at dawn.</h1>
+    <p class="lead">Saltmarsh Bakehouse is a small neighborhood bakery. Slow-risen sourdough, sea-salt pastries, and coffee, sold until the trays are empty.</p>
+    <a class="btn" href="#visit">Find us</a>
+  </header>
+
+  <section id="menu">
+    <h2>Today’s bakes</h2>
+    <ul class="menu">
+      <li><span>Country sourdough<small>Long-fermented, crisp crust</small></span><span>₹320</span></li>
+      <li><span>Sea-salt croissant<small>Butter, laminated by hand</small></span><span>₹140</span></li>
+      <li><span>Rye &amp; seed loaf<small>Dense, nutty, keeps for days</small></span><span>₹360</span></li>
+      <li><span>Cardamom bun<small>Sticky, spiced, still warm at 8</small></span><span>₹120</span></li>
+    </ul>
+  </section>
+
+  <section id="visit">
+    <h2>Visit</h2>
+    <div class="hours">
+      <p><strong>Tuesday to Sunday</strong>, 7 am to 2 pm</p>
+      <p>Closed Mondays</p>
+      <p>12 Harbor Lane</p>
+    </div>
+  </section>
+
+  <footer>© 2026 Saltmarsh Bakehouse</footer>
+</div>
+</body>
+</html>
